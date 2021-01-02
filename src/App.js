@@ -2,22 +2,19 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+
+  let posts = '나만의 개발 일기';
+  function funct(){
+    return 100
+  }
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className = "black-nav">
+        <div>개발 Blog</div>
+      </div>
+      <img src ={logo} />
+      <h4>{ posts }{ funct() }</h4>
     </div>
   );
 }
